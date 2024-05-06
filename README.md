@@ -26,17 +26,40 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
  
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
-**Procedure**
+## Procedure:
 
-/* write all the steps invloved */
+1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
 
-**PROGRAM**
+2.Declare Inputs and Outputs: Declare input and output ports for the module.
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+3.Implement Flip-Flop Logic: Write Verilog code to implement the T flip-flop logic based on its functional table. Use a synchronous always @(posedge CLK) block to trigger the flip-flop on the positive edge of the clock signal.
+
+4.Simulate Using Testbench: Write a Verilog testbench to simulate the behavior of the T flip-flop under different input conditions.
+
+5.Apply Input Stimuli: In the testbench, apply various combinations of input stimuli (T, CLK) to cover all possible input states.
+
+6.Verify Output Behavior: Verify that the output behavior of the T flip-flop matches the expected behavior defined by its functional table.
+
+7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes.
+
+
+
+## PROGRAM:
+
+
+ Program for flipflops and verify its truth table in quartus using Verilog programming. 
+ 
+ **Developed by:VAISHNAVIDEVI V** 
+ **RegisterNumber:212223040230**
 
 **RTL LOGIC FOR FLIPFLOPS**
+![9 1](https://github.com/vaishnavidevi23013992/T-FLIPFLOP-POSEDGE/assets/151864235/025db523-a0c5-461e-912c-c73f9274235f)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![9 2](https://github.com/vaishnavidevi23013992/T-FLIPFLOP-POSEDGE/assets/151864235/383bc15c-a4ca-425f-82cb-9b8578c99c90)
 
 **RESULTS**
+
+
+Hence, T flipflop using verilog and validating their functionality using their functional tables is implemented.
+
